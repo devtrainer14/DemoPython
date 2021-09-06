@@ -1,0 +1,10 @@
+1. login with your Gmail Account to FireBase.
+2. Create a project with Any name
+3. Then Go to Project's Settings and then create service-account.json and download the file by clicking on 'Generate Private New Key'
+4. Create a database by clicking on Develop>Database
+5. While creating a Database choose Test Mode & Done
+6. Open Your Databse in RealTime Databse Formate.
+7. Under Database Screen, There are 4 tabs. Data, Rules, Backups, Usage
+8. By Clicking on Data> one can get the url of project at top of database tree.
+9. Click Rules and change the given modes of read  & write from false to true.
+10. Start Coding

@@ -1,0 +1,18 @@
+ Imagine that you have 26 constants, labeled A through Z. Each constant is assigned 
+  a value in the following way: 
+     A = 26^1, B = 25^2, C = 24^3, D = 23^2 and so on till Z = 1^26. 
+Find the exact numerical value to the following equation: (Y - A) * (Y - B) * (Y - C) * ... * (Y - Z).
+
+
+A girl found that she had a 56 cms strip of ribbon. She could cut a cm off every second. 
+How long would it take for her to cut 56 pieces? 
+She can not fold the strip and also, can not stack two or more strips and cut them together.
+
+How many times in a day, are the hands of a clock in straight line but opposite in direction?
+
+If a giraffe has two eyes, a monkey has two eyes, and an elephant has two eyes, 
+how many eyes do we have?
+
+At 3.40, the hour hand and the minute hand of a clock form an angle of?
+
+

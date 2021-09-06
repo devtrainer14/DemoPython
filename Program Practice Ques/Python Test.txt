@@ -1,0 +1,11 @@
+1. Function to sort the list of tuples by its second item 
+2. Count duplicate list of tuples.
+3. Read the file & Uppercase the data of file and write it back to file
+4. Python program to create a list of tuples from given 
+    list having number and its cube in each tuple
+5. WAP to remove punchuation from string
+6. WAP to find the frequency of a word in a string.
+7. What is the difference between list and tuples in Python?
+8. What is pep 8?
+9. How is memory managed in Python?
+10.What are python modules? Name some commonly used built-in modules in Python?

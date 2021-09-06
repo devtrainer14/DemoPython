@@ -1,0 +1,45 @@
+//Serialization using rest_Framework in django
+
+from rest_framework import serializers
+
+class Comment:
+    def __init__(self,email,content):
+        self.email=email
+        self.content = content
+comment = Comment("sipika@btes","My Dummy Data")
+print(comment)
+
+Output:
+<Comment object at 0x030F51D0>
+
+
+class CommentSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    content = serializers.CharField()
+obj_comntser = CommentSerializer(comment)
+print(obj_comntser.data)  // This will show the unicode data
+
+//To convert data into json use Code
+
+from rest_framework.renderers import JSONRenderer
+
+json=JSONRenderer().render(obj_comntser.data)
+print(json)  //Will return the json data
+
+//Deserialization
+
+from  django.utils.six import BytesIO
+from rest_framework.parsers import JSONParser
+
+stream = BytesIO(json)
+parsed_json = JSONParser().parse(stream)
+print(parsed_json)  // This will again show the unicode data
+
+// To convert the data into model instance again
+serialized_data = CommentSerializer(data = parsed_json)
+
+// Check Validation
+serialized_data.is_valid()
+
+// Return Validated data only
+serialized_data.validated_data

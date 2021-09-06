@@ -1,0 +1,57 @@
+﻿1. Given an integer, n , perform the following     	conditional actions:
+	* If n is odd, print Weird
+	* If n is even and in the inclusive range of 2 to 5 , print Not Weird
+	* If n is even and in the inclusive range of 6 to 20 , print Weird
+	* If n is even and greater than 20, print Not Weird
+==================================================================
+Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
+========================================================================
+Take two lists, say for example these two:
+
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
+
+Extras:
+
+* Randomly generate two lists to test this
+* Write this in one line of Python (don’t worry if   you can’t figure this out at this point - we’ll get to it soon)
+========================================================================
+
+The number 6 is a truly great number. Given two int values, a and b, return True if either one is 6. Or if their sum 
+or difference is 6. Note: the function abs(num) computes the absolute value of a number.
+
+love6(6, 4) → True
+love6(4, 5) → False
+love6(1, 5) → True
+========================================================================
+
+Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum 
+and values to its right do not count. So for example, if b is 13, then both b and c do not count.
+
+
+lucky_sum(1, 2, 3) → 6
+lucky_sum(1, 2, 13) → 3
+lucky_sum(1, 13, 3) → 1
+========================================================================
+Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)
+
+Remember the rules:
+
+Rock beats scissors
+Scissors beats paper
+Paper beats rock
+=======================================================================
+Write a password generator in Python. Be creative with how you generate passwords - strong passwords have a mix of lowercase letters, uppercase letters, numbers, and symbols. The passwords should be random, generating a new password every time the user asks for a new password. Include your code in a main method.
+
+Extra:
+
+Ask the user how strong they want their password to be. For weak passwords, pick a word or two from a list.
+==================================================================
+Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function.
+==================================================================
+WAP to create dynamic B'day dictionary.
+==================================================================
+Find words from string which are greater than given length k
+==================================================================
+

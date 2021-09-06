@@ -1,0 +1,27 @@
+Code To create Session:
+
+Syntax:
+	request.session['key'] = value
+Example:
+	request.session['username'] = u_email(can be any variable)
+
+Code to retreive data from session:
+
+Syntax:
+ 	if request.session.has_key('key'):
+        		uname = request.session['key']
+Example:
+	uname = None
+   		 if request.session.has_key('username'):
+       			 uname = request.session['username']
+   
+Steps to use Session:
+
+1. Login First by using credentials
+2. if credentials are valid then create session using code
+3. else No Session will be created.
+
+Note: 
+Session can store any data from user's information. e.g Username/email/id.
+It depends upon the demand of project and can use the same data through out the project by retreive from session.
+

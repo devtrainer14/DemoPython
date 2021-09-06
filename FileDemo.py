@@ -1,0 +1,11 @@
+obj = open("demo11.txt",'w')
+obj.write("hi..! How are you??")
+obj.close()
+
+obj=open('demo11.txt','r+')
+s = str(obj.read())
+s1 = s.capitalize()
+obj.write(s1)
+obj.close()
+mkdir("new dir")
+print(s1)

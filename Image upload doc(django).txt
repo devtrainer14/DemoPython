@@ -1,0 +1,84 @@
+Image Upload in Django
+Settings.py
+
+MEDIA_ROOT='/eclipse-workspace/MyTemplateSampledjango/MyApp/static/media' or url of root folder
+MEDIA_URL='/media/'
+
+url.py
+
+from MyTemplateSampledjango import settings
+from MyTemplateSampledjango.settings import MEDIA_ROOT,MEDIA_URL
+
++static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+model.py
+
+class Document(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='documents/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    
+def __str__(self):
+    return self.description+" "+self.document
+
+form.py
+
+class DocumentForm(forms.ModelForm):
+    class Meta:
+        model = Document
+        fields = ('description', 'document', )
+		
+.html
+
+{% extends 'MyApp/index.html' %}
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+
+  <p><a href="/Index">Return to home</a></p>
+{% endblock %}
+
+views.py
+
+def model_form_upload(request):
+    if request.method == 'POST':
+        form = DocumentForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/Index')
+    else:
+        form = DocumentForm()
+    return render(request, 'MyApp/model_form_upload.html', {
+        'form': form
+    })
+	
+	
+//To download and display the image at template
+
+.html
+
+{% extends 'MyApp/index.html' %}
+
+{% block content %}
+  
+   <img src="/static/media/{{image}}">
+   
+  <p><a href="/Index">Return to home</a></p>
+{% endblock %}
+
+view.py
+
+x1=None  
+def Display_Image(request):
+    p = Document.objects.filter(description='My pic2').values('document')
+    for x in p:
+        print(x['document'])
+        x1 = x['document']
+        
+    return render(request, 'MyApp/DisplayImage.html', {"image":x1})
+    
+	

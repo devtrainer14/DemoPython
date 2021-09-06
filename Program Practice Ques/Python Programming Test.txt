@@ -1,0 +1,18 @@
+1. Read string from file and Calculate the number of upper / lower case letters in a string
+	Sample: A Black Fox
+	output: UpperCase letter : 3
+	            Lower Case letter : 6
+
+2. Write a Python program that accepts a hyphen-separated 
+of words as input and prints the words in a hyphen-separated 
+sequence after sorting them alphabetically. 
+    Sample Items : green-red-yellow-black-white
+    Expected Result : black-green-red-white-yellow
+
+3. Write a Python program to remove and print every third 
+from a list of numbers until the list becomes empty.
+
+4. Write a query to get Name and contact from table A and department
+from table B, correspond to their id's taken as primary key and 
+Foreign Key respectively
+

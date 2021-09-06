@@ -1,0 +1,26 @@
+# Python program to display calendar
+# Python Program to Check if a Number is Positive, Negative or Zero
+# Python Program to Check Leap Year
+#Write a Python program to find those numbers which are divisible by 7
+   and multiple of 5, between 1500 and 2700 (both included)
+# Armstrong number 
+# Sum of Natural Numbers
+# LCM of Number
+# Function to sort the list of tuples by its second item 
+# WAP to remove punchuation from string
+# count the vowel in the string
+# Sort the element in a python.
+# Count duplicate list of tuples.
+# WAP to read the list of words and return the length of longest one.
+# Anagram of Strings
+# Calculate no. of digits and letters in a string
+# Occurance of each digit in a phone number.
+#Write a Python program to count the number of strings 
+  where the string length is 2 or more and the first and last 
+  character are same from a given list of strings.
+# Read the file and replace the curse words with same number of stars.
+# Read the file & Uppercase the data of file and write it back to file.
+# Algorithms
+# Python program to create a list of tuples from given 
+  list having number and its cube in each tuple
+

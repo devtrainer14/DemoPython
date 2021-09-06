@@ -1,0 +1,5 @@
+Puzzle's Answers:
+
+3. The hands of a clock point in opposite directions (in the same straight line) 11 times in every 12 hours. (Because between 5 and 7 they point in opposite directions at 6 o'clcok only).
+
+So, in a day, the hands point in the opposite directions 22 times.

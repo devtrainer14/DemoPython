@@ -1,0 +1,18 @@
+ATM System:
+1. Once you run the program there should be a welcome message. i.e.
+	Welcome User..! Press 'y' to Continue, Other Key to Exit.
+if 'Y' pressed:
+2.	Enter ATM Pin : (Maintain a list of containing 4 ATM's Already into it)
+3.	Match Entered ATM-Pin with List of Pin.
+4.	You can enter wrong pin only three times.
+5.	if more than 3 times than system get halt and show the msg:
+	"Your System get Blocked. Please Contact to Bank"
+6.	If Match occured then show below options:
+	1. Press 1 for Withdraw
+	2. Press 2 for Deposit
+	3. Press 3 for Bal. Equiry
+	4. Press 4 for Mini Stmnt
+	5. Exit
+	These options further perform operations as per their mentioned names.
+	
+	
